@@ -47,9 +47,9 @@
 
 | 구성 요소 | 기술명 |
 
-| 프론트엔드 | React, TypeScript, Axios, Tailwind |
+| 프론트엔드 | React, JavaScript, Axios |
 
-| 백엔드 | NestJS, TypeORM, MariaDB, JWT |
+| 백엔드 | NestJS, TypeScript, TypeORM, MariaDB, JWT |
 
 | AI 분석 서버 | FastAPI, YOLOv8, OpenCV, Norfair, Openai API, Pinecone |
 

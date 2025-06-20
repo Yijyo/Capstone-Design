@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: rgb(180, 180, 180);
+  font-size: 13px;
+  text-align: left;
+}
+
+.signupBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 2rem;
+  width: 320px;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 300px;
+  padding: 10px 20px;
+  border: 0.8px solid rgb(180, 180, 180);
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+  height: 30px;
+}
+
+.input:focus {
+  border-color: #2555BC;
+}
+
+.input::placeholder {
+  color: rgb(180, 180, 180);
+}
+
+
+.button {
+  width: 342px;
+  padding: 10px 20px;
+  background-color: #2555BC;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  border: none;
+  height: 50px;
+  font-weight: 400;
+}
+
+.button:hover {
+  background-color: #2555BC;
+}
+
+.loginText {
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.loginLink {
+  cursor: pointer;
+  color: rgb(180, 180, 180);
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.bottom {
+  width: 100%;
+  text-align: center;
+  border-top: 0.8px solid rgb(180, 180, 180);
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.bottom span {
+  margin-right: 8px;
+  color: rgb(180, 180, 180);
+  font-weight: 400;
+}
+
+.loginLink span {
+  text-decoration: underline;
+  color: rgb(180, 180, 180);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.policy {
+  text-decoration: none;
+  color: black !important;
+}
+
+.policy:visited {
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+}
+
+.checkboxContainer input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.checkboxContainer input[type="checkbox"]:checked {
+  background-color: rgb(180, 180, 180);
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroupSmall {
+  margin-bottom: 10px;
+}
+
+.noticeText {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: rgb(180, 180, 180);
+}
+
+.checkboxContainer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.lastCheckbox {
+  margin-bottom: 20px;
+}

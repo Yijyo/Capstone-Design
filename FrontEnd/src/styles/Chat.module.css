@@ -1,0 +1,471 @@
+.ChatIcon {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #606060;
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.2s ease-in-out;
+  top: 8px;
+  left: 12px;
+}
+
+.ChatIcon:hover {
+  background: #e7e7e7;
+}
+
+.ChatIcon::after {
+  content: "새 채팅";
+  position: absolute;
+  bottom: -45px;
+  left: 80%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.ChatIcon:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.ChatIcon:hover::after,
+.ChatIcon:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.logo {
+  width: 172px;
+  height: 69.5px;
+  position: absolute;
+  top: 6px;
+  left: 42px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.LogIn {
+  position: absolute;
+  top: 41px;
+  right: 170px;
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.Join {
+  position: absolute;
+  top: 41px;
+  right: 70px;
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.txt {
+  font-size: 30px;
+  margin-top: 165px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.ChatInputContainer {
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  max-width: 750px;
+  height: 45px;
+  background: white;
+  border-top: 1px solid #ccc;
+  padding: 6px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.ChatInput {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 600px;
+}
+
+.ChatInput::placeholder {
+  color: #c1c1c1;
+}
+
+.attach {
+  bottom: 10px;
+  left: 10px;
+  color: rgb(99, 99, 99);
+  background: white;
+  border: 1px solid #dadada;
+  ;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 9.3px 12px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.attachIcon {
+  font-size: 12px;
+  display: inline-block;
+  transform: translateX(-3px);
+}
+
+.search {
+  bottom: 10px;
+  left: 80px;
+  color: rgb(99, 99, 99);
+  background: white;
+  border: 1px solid #dadada;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  padding: 9px 11px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.searchIcon2 {
+  font-size: 18px;
+  display: inline-block;
+  transform: translateX(-3px);
+}
+
+.reason {
+  bottom: 10px;
+  left: 155px;
+  color: rgb(99, 99, 99);
+  background: white;
+  border: 1px solid #dadada;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  padding: 7px 9.5px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.reasonIcon {
+  font-size: 22px;
+  display: inline-block;
+  transform: translateX(-2px);
+}
+
+.SendButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+.SendButton img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.ChatMenu {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ChatMenu button {
+  color: rgb(99, 99, 99);
+  background: white;
+  border: 1px solid #dadada;
+  font-size: 13px;
+  padding: 10px 12px;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  gap: 5px;
+}
+
+.refer {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 14px;
+  color: #6c6c6c;
+  font-size: 12px;
+}
+
+.ChatInputOverlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 117.5px;
+  z-index: 98;
+  pointer-events: none; 
+  background: #f8f8f8;
+  width: 100%;
+  pointer-events: none;
+}
+
+.ChatContainer {
+  width: 100vw;
+  height: calc(100vh - 117.5px);
+  padding: 0px 250px;
+  padding-bottom: 95px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: relative;
+  margin: 80px auto 0;
+}
+
+.ChatContainer::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+  right: 0;
+}
+
+.ChatContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(159, 159, 159, 0.2);
+  border-radius: 6px;
+}
+
+.ChatContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.message {
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding: 3px 18px;
+  border-radius: 25px;
+  display: flex;
+  max-width: fit-content;
+  word-wrap: break-word;
+  width: auto;
+  line-height: 1.5; 
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.userMessage {
+  background-color: #2555BC;
+  color: white;
+  text-align: right;
+  margin-left: auto;
+  padding: 10px 13px;
+  line-height: 1.5; 
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.aiMessage {
+  background-color: white;
+  text-align: left;
+  margin-right: auto;
+  padding: 10px 13px;
+  line-height: 1.5; 
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-width: 720px;
+}
+
+.InputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+  pointer-events: auto;
+}
+
+.AttachButton{
+  width: 24px;
+  height: 24px;
+}
+
+.AttachButton img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.sendIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.Divider {
+  width: 100%;
+  height: 0.6px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.ButtonContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 750px;
+  box-sizing: border-box;
+  height: 40px;
+  align-items: center;
+}
+
+.ButtonContainer button {
+  padding: 10px; 
+  font-size: 14px;
+  height: 32px;
+  flex: none;
+  min-width: 100px;
+  box-sizing: border-box;
+}
+
+.reasonIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.lawIcon {
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
+}
+
+.messageWrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.aiWrapper {
+  justify-content: flex-start;
+}
+
+.userWrapper {
+  justify-content: flex-end;
+}
+
+.ai_avatar {
+  width: 47px;
+  height: 47px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.user_avatar {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.SelectInputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.OptionList {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+}
+
+.radioOption {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 12px;
+  margin-right: 12px;
+  color: #606060;
+}
+
+.radioOption input[type="radio"] {
+  margin: 0;
+  /* margin-left: 10px; */
+  vertical-align: middle;
+}
+
+.graph_bg {
+  stroke: #2A5CBF;
+  /* stroke: #79D9C7;  */
+  /* #2246F4 #2A5CBF */
+}
+
+.graph_fg {
+  stroke: #C94C4C; 
+  /* stroke: #49B1F2;  */
+}
+
+.faultRatioText {
+  margin-top: 8px;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 14px;
+  white-space: pre-line;
+}

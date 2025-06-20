@@ -46,9 +46,11 @@
 ## ⚙️ 기술 스택
 
 | 구성 요소 | 기술명 |
-| — | — |
+
 | 프론트엔드 | React, TypeScript, Axios, Tailwind |
+
 | 백엔드 | NestJS, TypeORM, MariaDB, JWT |
+
 | AI 분석 서버 | FastAPI, YOLOv8, OpenCV, Norfair, Openai API, Pinecone |
 
 —

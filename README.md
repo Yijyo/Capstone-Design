@@ -39,8 +39,6 @@
 /frontend       # React 기반 프론트엔드
 /backend        # NestJS 기반 백엔드
 /ai-server      # FastAPI 기반 AI 분석 서버
-/docs           # 설계 문서, 기준표, 논문 등
-
 ```
 
 —
